@@ -20,7 +20,7 @@ def talk(text) :
     # Convert text to speech
     print("ELSA:", text)
     engine.say(text)
-    engine.runAndWait()
+    engine.runAndWait() 
 
 
 def take_command() :
@@ -61,7 +61,7 @@ def run_alexa() :
         talk(info)
 
     elif 'date' in command:
-        talk("Sorry, Ii have a headache today")
+        talk("Sorry, I have a headache today")
         
     elif 'are you single' in command:
         talk("I am in a relationship with Wifi")
