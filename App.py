@@ -61,7 +61,8 @@ def run_alexa() :
         talk(info)
 
     elif 'date' in command:
-        talk("Sorry, I have a headache today")
+        date = datetime.datetime.now().strftime('%A, %B %d, %Y')
+        talk("Today's date is: " + date)
         
     elif 'are you single' in command:
         talk("I am in a relationship with Wifi")
@@ -71,6 +72,9 @@ def run_alexa() :
 
     elif command != "":
         talk("Please say the command again.")
+
+    elif 'Thank you' in command:
+        talk("You are welcome!")
     else:
         pass #No voice detected, ignore silently
 
