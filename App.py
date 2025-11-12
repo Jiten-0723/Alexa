@@ -35,7 +35,7 @@ def take_command() :
             command = command.lower()
             if 'ELSA' in command:
                 command = command.replace('ELSA', '')
-                print("You siad:", command)
+                print("You said:", command)
     except sr.UnknownValueError:
         print("Sorry, I did not understand that.")
     except sr.RequestError:
